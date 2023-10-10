@@ -7,9 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.logo_img {
-  height: 100px;
-}
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -20,9 +17,11 @@ select {
   border-radius: 5px;
   border: 1px solid #616365;
 }
+
 .main_grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 15vh auto 10vh;
 
   grid-template-areas:
     "header"
@@ -32,14 +31,20 @@ select {
 
 header {
   grid-area: header;
+  display: flex;
 }
-
+.svg {
+  height: 3vh;
+  margin: 3em 0 3em 3em;
+}
+.logo_img {
+  height: 10vh;
+  margin: 1em;
+}
 .inner_container {
   grid-area: main;
   display: grid;
-  grid-template-columns: 40% 35%;
-  margin-left: 10%;
-  margin-left: 35px;
+  grid-template-columns: 40% 40%;
 }
 .inner_container form {
   display: grid;
@@ -47,9 +52,27 @@ header {
 }
 
 .imagegallery {
-  width: 200px;
-  background-color: aqua;
-  height: 200px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.imagegallery p {
+  font-weight: 300;
+  font-size: 14px;
+}
+.imagegallery a {
+  color: black;
+}
+
+.img_container {
+  max-width: 50%;
+}
+.img_item {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
 }
 .allaradio {
   row-gap: 20px;
@@ -101,15 +124,18 @@ header {
 .checkB {
   grid-column: 1;
 }
-.subB {
-}
+
 .btn {
-  padding: 10px;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 100px;
   color: white;
   font-weight: 500;
+  font-size: 16px;
   background-color: black;
   border: none;
+}
+.btn:hover {
+  background-color: rgba(14, 13, 13, 0.9);
 }
 footer {
   height: 100px;

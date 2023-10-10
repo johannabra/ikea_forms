@@ -9,13 +9,44 @@
   <body>
     <div class="main_grid">
       <header>
+        <img class="svg" src="./assets/arrows.svg" />
         <img src="assets/ikea_logo.png" alt="Ikea logo" class="logo_img" />
       </header>
       <main class="inner_container">
         <div class="imagegallery">
-          <h2>här är ikea</h2>
+          <h1>
+            Bli <span style="color: #0058a3">IKEA Family </span>
+            medlem
+          </h1>
+          <p>Är du redan medlem? <a href="#"> Logga in</a></p>
+
           <div class="img_container">
-            <img src="assets/" alt="" class="img_item" />
+            <img src="assets/blomma.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/fest.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/kaffe.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/kaffetjej.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/kompisar.jpg" alt="" class="img_item" />
+          </div>
+
+          <div class="img_container">
+            <img src="assets/mat.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/mys (1).jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/oldies.jpg" alt="" class="img_item" />
+          </div>
+          <div class="img_container">
+            <img src="assets/pyssel.jpg" alt="" class="img_item" />
           </div>
         </div>
 
@@ -28,14 +59,18 @@
 
           <div class="allaradio">
             <div class="radioB">
-              <input type="radio" name="radio" id="buttonYes" />
+              <input type="radio" name="member" id="buttonYes" />
               <label for="buttonYes"
                 >Ja, jag vill bli medlem och ta del av förmåner, medlemspriser
                 och mycket mer! Mer information</label
               >
             </div>
             <div class="radioB">
-              <input type="radio" name="radio" id="buttonNo" />
+              <input
+                type="radio"
+                name="member"
+                id="buttonNo"
+                value="buttonNo" />
               <label for="buttonNo"
                 >Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto
                 utan extra förmåner. Mer information</label
@@ -45,7 +80,7 @@
 
           <div class="personnummer">
             <label for="snumber">Personnummer</label>
-            <input type="text" name="Socialsecurity" id="snumber" />
+            <input type="text" name="personnummer" id="snumber" />
           </div>
 
           <div class="förnamn">
@@ -85,19 +120,19 @@
 
           <div class="maincheck">
             <div class="checkB">
-              <input type="checkbox" name="integrity" id="integ" />
+              <input type="checkbox" name="integrity" id="integ" required />
               <label for="integ"
                 >Jag har läst och förstått Integritetspolicy.</label
               >
             </div>
             <div class="checkB">
-              <input type="checkbox" name="userterms" id="uterms" />
+              <input type="checkbox" name="userterms" id="uterms" required />
               <label for="uterms"
                 >Jag har läst och accepterar Användarvillkor.</label
               >
             </div>
             <div class="checkoffer">
-              <input type="checkbox" name="Offer" id="offer" />
+              <input type="checkbox" name="offer" id="offer" />
               <label for="offer">
                 Jag vill få erbjudanden, överraskningar och
                 heminredningsinspiration från IKEA.</label
@@ -107,23 +142,18 @@
 
           <div class="xtracheck">
             <div class="checkB">
-              <input type="checkbox" name="integrity" id="integ" />
-              <label for="integ"
-                >Jag har läst och förstått Integritetspolicy.</label
-              >
+              <input type="checkbox" name="Offer by epost" id="offerEpost" />
+              <label for="offerEpost">Via e-post.</label>
             </div>
+
             <div class="checkB">
-              <input type="checkbox" name="userterms" id="uterms" />
-              <label for="uterms"
-                >Jag har läst och accepterar Användarvillkor.</label
-              >
+              <input type="checkbox" name="offer by Sms" id="sms" />
+              <label for="sms">Via SMS</label>
             </div>
+
             <div class="checkB">
-              <input type="checkbox" name="Offer" id="offer" />
-              <label for="offer">
-                Jag vill få erbjudanden, överraskningar och
-                heminredningsinspiration från IKEA.</label
-              >
+              <input type="checkbox" name="offer by post" id="posten" />
+              <label for="posten"> Via post</label>
             </div>
           </div>
 
