@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikea form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_grid">
+      <header>
+        <img src="assets/ikea_logo.png" alt="Ikea logo" class="logo_img" />
+      </header>
+      <main class="inner_container">
+        <div class="imagegallery">
+          <h2>här är ikea</h2>
+          <div class="img_container">
+            <img src="assets/" alt="" class="img_item" />
+          </div>
+        </div>
+
+        <form action="https://httpbin.org/anything" method="post">
+          <h4>
+            Vad kul att du vill skapa ett konto hos oss! Välj om du vill bli
+            IKEA Family medlem, helt utan kostnad. Annars skapar du ett enkelt
+            IKEA konto utan några extra förmåner
+          </h4>
+
+          <div class="allaradio">
+            <div class="radioB">
+              <input type="radio" name="radio" id="buttonYes" />
+              <label for="buttonYes"
+                >Ja, jag vill bli medlem och ta del av förmåner, medlemspriser
+                och mycket mer! Mer information</label
+              >
+            </div>
+            <div class="radioB">
+              <input type="radio" name="radio" id="buttonNo" />
+              <label for="buttonNo"
+                >Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto
+                utan extra förmåner. Mer information</label
+              >
+            </div>
+          </div>
+
+          <div class="personnummer">
+            <label for="snumber">Personnummer</label>
+            <input type="text" name="Socialsecurity" id="snumber" />
+          </div>
+
+          <div class="förnamn">
+            <label for="fname">Förnamn</label>
+            <input type="text" name="Firstname" id="fname" />
+          </div>
+
+          <div class="efternamn">
+            <label for="lname">Efternamn</label>
+            <input type="text" name="lastname" id="lname" />
+          </div>
+
+          <div class="varuhus">
+            <label for="whouse">Önskar varuhus</label>
+            <select name="warehouse" id="whouse">
+              <option value=""></option>
+              <option value="stockholm">Stockholm</option>
+              <option value="göteborg">Göteborg</option>
+              <option value="malmö">Malmö</option>
+            </select>
+          </div>
+
+          <div class="mobilnummer">
+            <label for="phonenumber">Mobilnummer (valfritt)</label>
+            <input type="tel" name="Phonenumber" id="phonenumber" />
+          </div>
+
+          <div class="email">
+            <label for="email">E-postadress</label>
+            <input type="email" name="Email" id="email" />
+          </div>
+
+          <div class="lösenord">
+            <label for="pword">Lösenord</label>
+            <input type="password" name="password" id="pword" />
+          </div>
+
+          <div class="maincheck">
+            <div class="checkB">
+              <input type="checkbox" name="integrity" id="integ" />
+              <label for="integ"
+                >Jag har läst och förstått Integritetspolicy.</label
+              >
+            </div>
+            <div class="checkB">
+              <input type="checkbox" name="userterms" id="uterms" />
+              <label for="uterms"
+                >Jag har läst och accepterar Användarvillkor.</label
+              >
+            </div>
+            <div class="checkoffer">
+              <input type="checkbox" name="Offer" id="offer" />
+              <label for="offer">
+                Jag vill få erbjudanden, överraskningar och
+                heminredningsinspiration från IKEA.</label
+              >
+            </div>
+          </div>
+
+          <div class="xtracheck">
+            <div class="checkB">
+              <input type="checkbox" name="integrity" id="integ" />
+              <label for="integ"
+                >Jag har läst och förstått Integritetspolicy.</label
+              >
+            </div>
+            <div class="checkB">
+              <input type="checkbox" name="userterms" id="uterms" />
+              <label for="uterms"
+                >Jag har läst och accepterar Användarvillkor.</label
+              >
+            </div>
+            <div class="checkB">
+              <input type="checkbox" name="Offer" id="offer" />
+              <label for="offer">
+                Jag vill få erbjudanden, överraskningar och
+                heminredningsinspiration från IKEA.</label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Gå vidare</button>
+        </form>
+      </main>
+
+      <footer>
+        <p>
+          IKEA.se - Cookiepolicy och Integritetspolicy © Inter IKEA Systems B.V.
+          1999-2023
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

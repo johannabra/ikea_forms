@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikea form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainGrid">
+      <header>
+        <img src="assets/ikea_logo.png" alt="Ikea logo" class="logo_img" />
+      </header>
+
+      <div class="gallery">
+        <h2>här är ikea</h2>
+        <img src="#" alt="bilder" />
+        <img src="#" alt="bilder" />
+        <img src="#" alt="bilder" />
+        <img src="#" alt="bilder" />
+        <img src="#" alt="bilder" />
+      </div>
+      <div class="formContainer">
+        <form action="https://httpbin.org/anything" method="post">
+          <input type="radio" name="radio" id="buttonYes" />
+          <label for="buttonYes"
+            >Ja, jag vill bli medlem och ta del av förmåner, medlemspriser och
+            mycket mer! Mer information</label
+          >
+          <input type="radio" name="radio" id="buttonNo" />
+          <label for="buttonNo"
+            >Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto utan
+            extra förmåner. Mer information</label
+          >
+          <label for="snumber">Personnummer</label>
+          <input type="text" name="Socialsecurity" id="snumber" />
+
+          <label for="fname">Förnamn</label>
+          <input type="text" name="Firstname" id="fname" />
+
+          <label for="lname">Efternamn</label>
+          <input type="text" name="lastname" id="lname" />
+
+          <label for="whouse">Önskar varuhus</label>
+          <select name="warehouse" id="whouse">
+            <option value=""></option>
+            <option value="stockholm">Stockholm</option>
+            <option value="göteborg">Göteborg</option>
+            <option value="malmö">Malmö</option>
+          </select>
+
+          <label for="phonenumber">Mobilnummer (valfritt)</label>
+          <input type="tel" name="Phonenumber" id="phonenumber" />
+
+          <label for="email">E-postadress</label>
+          <input type="email" name="Email" id="email" />
+
+          <label for="pword">Lösenord</label>
+          <input type="password" name="password" id="pword" />
+
+          <input type="checkbox" name="integrity" id="integ" />
+          <label for="integ"
+            >Jag har läst och förstått Integritetspolicy.</label
+          >
+
+          <input type="checkbox" name="userterms" id="uterms" />
+          <label for="uterms"
+            >Jag har läst och accepterar Användarvillkor.</label
+          >
+
+          <input type="checkbox" name="Offer" id="offer" />
+          <label for="offer">
+            Jag vill få erbjudanden, överraskningar och heminredningsinspiration
+            från IKEA.</label
+          >
+
+          <button type="submit">Gå vidare</button>
+        </form>
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

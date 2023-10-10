@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo_img {
+  height: 100px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #616365;
+}
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.inner_container {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 40% 35%;
+  margin-left: 10%;
+  margin-left: 35px;
+}
+.inner_container form {
+  display: grid;
+  gap: 30px;
+}
+
+.imagegallery {
+  width: 200px;
+  background-color: aqua;
+  height: 200px;
+}
+.allaradio {
+  row-gap: 20px;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.maincheck {
+  row-gap: 30px;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+}
+.xtracheck {
+  row-gap: 10px;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 40px;
+}
+.checkoffer {
+  margin-top: 30px;
+}
+.personnummer {
+  grid-column: 1;
+}
+.förnamn {
+  grid-column: 1;
+}
+.efternamn {
+  grid-column: 1;
+}
+.varuhus {
+  grid-column: 1;
+}
+.mobilnummer {
+  grid-column: 1;
+}
+.email {
+  grid-column: 1;
+}
+.lösenord {
+  grid-column: 1;
+}
+.checkB {
+  grid-column: 1;
+}
+.subB {
+}
+.btn {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  background-color: black;
+  border: none;
+}
+footer {
+  height: 100px;
+  padding-top: 80px;
+  font-size: small;
+  margin-left: 35px;
+}
