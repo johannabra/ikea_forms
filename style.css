@@ -31,7 +31,6 @@ select {
 
 header {
   grid-area: header;
-  display: flex;
 }
 .svg {
   height: 3vh;
@@ -44,25 +43,30 @@ header {
 .inner_container {
   grid-area: main;
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 1fr;
 }
 .inner_container form {
   display: grid;
   gap: 30px;
+  margin: 4rem;
 }
-
 .imagegallery {
-  width: 80%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
+  display: none;
 }
-.imagegallery p {
+.mobil_img {
+  height: 50vh;
+  justify-self: center;
+  margin: 20px;
+}
+.imagegallery_txt {
+  margin-left: 3rem;
+}
+.imagegallery_txt p {
   font-weight: 300;
   font-size: 14px;
+  padding-bottom: 20px;
 }
-.imagegallery a {
+.imagegallery_txt a {
   color: black;
 }
 
@@ -141,5 +145,38 @@ footer {
   height: 100px;
   padding-top: 80px;
   font-size: small;
-  margin-left: 35px;
+  margin-left: 3rem;
+}
+
+@media (min-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #616365;
+  }
+  .inner_container {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 40% 40%;
+  }
+  .mobil_img {
+    display: none;
+  }
+  .imagegallery {
+    grid-column: 1;
+    display: flex;
+    max-width: 70%;
+    flex-wrap: wrap;
+    margin: 3rem;
+  }
+  .inner_container form {
+    display: grid;
+    margin: 0;
+    gap: 30px;
+  }
 }
