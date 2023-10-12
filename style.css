@@ -53,6 +53,9 @@ header {
 .imagegallery {
   display: none;
 }
+.ipadgallery {
+  display: none;
+}
 .mobil_img {
   height: 50vh;
   justify-self: center;
@@ -162,21 +165,63 @@ footer {
   .inner_container {
     grid-area: main;
     display: grid;
-    grid-template-columns: 40% 40%;
-  }
-  .mobil_img {
-    display: none;
+    grid-template-columns: 40vw 40vw;
   }
   .imagegallery {
+    display: none;
+  }
+  .ipadgallery {
     grid-column: 1;
     display: flex;
-    max-width: 70%;
-    flex-wrap: wrap;
-    margin: 3rem;
+    max-width: 100%;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .img_containeripad {
+    max-width: 100%;
+  }
+  .ipad_img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
   }
   .inner_container form {
     display: grid;
     margin: 0;
     gap: 30px;
+  }
+  .mobil_img {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imagegallery {
+    grid-column: 1;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .img_container {
+    max-width: 50%;
+  }
+  .img_item {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .inner_container form {
+    display: grid;
+    margin: 0;
+    gap: 30px;
+  }
+  .mobil_img {
+    display: none;
+  }
+  .ipadgallery {
+    display: none;
   }
 }
